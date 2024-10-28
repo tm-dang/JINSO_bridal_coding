@@ -1,0 +1,296 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+/* BODY */
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: "Inter", system-ui;
+  font-size: 1.2vw;
+}
+
+/* BODY */
+/* JINSO SERVICE BLOCK */
+
+.jinso-service-block {
+  position: relative; /* Đặt vị trí tương đối cho khối chính */
+}
+
+.about-jinso-content,
+.greeting-content,
+.process-content,
+.about-fees {
+  position: absolute;
+}
+
+.about-jinso-content {
+  top: 7%;
+  left: 45%;
+  justify-content: center;
+  text-align: center;
+}
+
+.about-jinso-content h3 {
+  margin-bottom: 2vw;
+  color: #ffff;
+  font-weight: 400;
+  font-family: "Shippori Mincho B1", serif;
+  font-size: 1.5vw;
+}
+
+.about-jinso-content p {
+  max-width: 60%;
+  margin: 0 auto;
+  padding-bottom: 2vw;
+  text-align: justify;
+  color: #ffff;
+}
+
+.greeting-content {
+  top: 40%;
+  justify-content: center;
+  text-align: center;
+}
+
+.greeting-content h3 {
+  margin-bottom: 2vw;
+  color: #ffff;
+  font-weight: 400;
+  font-family: "Shippori Mincho B1", serif;
+  font-size: 1.5vw;
+}
+
+.greeting-content p {
+  max-width: 40%;
+  margin: 0 auto;
+  padding-bottom: 2vw;
+  text-align: justify;
+  color: #ffff;
+}
+
+.process-content {
+  top: 73%;
+  right: 50%;
+  text-align: center;
+  justify-content: center;
+  color: #2b2b2b;
+}
+
+.process-content h3 {
+  margin-bottom: 2vw;
+  font-weight: 400;
+  font-family: "Shippori Mincho B1", serif;
+  font-size: 1.5vw;
+}
+
+.process-content p {
+  padding-bottom: 2vw;
+  max-width: 60%;
+  text-align: justify;
+  margin: 0 auto;
+}
+
+.about-fees {
+  top: 73%;
+  left: 50%;
+  text-align: center;
+  justify-content: center;
+  color: #2b2b2b;
+}
+
+.about-fees h3 {
+  margin-bottom: 2vw;
+  font-weight: 400;
+  font-family: "Shippori Mincho B1", serif;
+  font-size: 1.5vw;
+}
+
+.about-fees p {
+  padding-bottom: 2vw;
+  margin: 0 auto;
+  text-align: justify;
+  max-width: 60%;
+}
+
+.button-design button {
+  background: none;
+  justify-content: center;
+  align-items: center;
+  min-width: 220px;
+  min-height: 56px;
+  font-size: 1.2em;
+  border-radius: 100px;
+  cursor: pointer;
+  font-weight: 400;
+  position: relative;
+  border: 2px solid rgb(197, 97, 137);
+  color: #a43549;
+  background: #fff;
+  font-weight: 500;
+  overflow: hidden;
+}
+
+.button-design button a {
+  text-decoration: none;
+  color: inherit;
+  background: transparent;
+  border-radius: 100px;
+  padding: 0px 70px;
+  z-index: 1;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.2vw;
+}
+
+button i {
+  font-size: 1.5em;
+  margin-left: 10px;
+  transition: all 0.5s linear;
+  color: #dfeced;
+}
+
+.button-design button:hover i {
+  transform: translateX(30px);
+  color: #a10f5d;
+}
+
+.button-design button::before,
+.button-design button::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -100%;
+  left: 0;
+  background-color: rgb(212, 102, 159);
+  z-index: -1;
+  transition: all 400ms ease-in;
+}
+
+.button-design button:hover {
+  color: #e9409a;
+}
+
+.button-design button::before {
+  opacity: 0.3;
+}
+
+.button-design button::after {
+  transition-delay: 0.3s;
+}
+
+.button-design button:hover::before,
+.button-design button:hover::after {
+  top: 0;
+}
+
+/* BUTTON 2 */
+.button-design2 button {
+  background: none;
+  justify-content: center;
+  align-items: center;
+  min-width: 220px;
+  min-height: 56px;
+  font-size: 1.2em;
+  border-radius: 100px;
+  cursor: pointer;
+  font-weight: 400;
+  position: relative;
+  border: 2px solid rgb(248, 131, 14);
+  color: #e27532;
+  font-weight: 500;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.button-design2 button:hover i {
+  transform: translateX(30px);
+  color: #a15d0f;
+}
+
+.button-design2 button::before,
+.button-design2 button::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -100%;
+  left: 0;
+  background-color: rgb(240, 146, 99);
+  z-index: -1;
+  transition: all 400ms ease-in;
+}
+
+.button-design2 button:hover {
+  color: #ebb667; 
+}
