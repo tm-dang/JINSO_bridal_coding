@@ -6,12 +6,14 @@
 *::after {
   box-sizing: border-box;
 }
+
 /*
     2. Remove default margin
   */
 * {
   margin: 0;
 }
+
 /*
     Typographic tweaks!
     3. Add accessible line-height
@@ -21,6 +23,7 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
+
 /*
     5. Improve media defaults
   */
@@ -32,6 +35,7 @@ svg {
   display: block;
   max-width: 100%;
 }
+
 /*
     6. Remove built-in form typography styles
   */
@@ -41,6 +45,7 @@ textarea,
 select {
   font: inherit;
 }
+
 /*
     7. Avoid text overflows
   */
@@ -53,6 +58,7 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
+
 /*
     8. Create a root stacking context
   */
@@ -60,6 +66,7 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
 /* BODY */
 
 html {
@@ -82,7 +89,12 @@ body {
 /* JINSO SERVICE BLOCK */
 
 .jinso-service-block {
-  position: relative; /* Đặt vị trí tương đối cho khối chính */
+  position: relative;
+}
+
+.width-page {
+  width: 1100px;
+  margin: 0 auto;
 }
 
 .about-jinso-content,
@@ -93,7 +105,7 @@ body {
 }
 
 .about-jinso-content {
-  top: 7%;
+  top: 5%;
   left: 45%;
   justify-content: center;
   text-align: center;
@@ -103,7 +115,7 @@ body {
   margin-bottom: 2vw;
   color: #ffff;
   font-weight: 400;
-  font-family: "Shippori Mincho B1", serif;
+  font-family: 'Noto Sans JP', serif;
   font-size: 1.5vw;
 }
 
@@ -116,7 +128,7 @@ body {
 }
 
 .greeting-content {
-  top: 40%;
+  top: 38%;
   justify-content: center;
   text-align: center;
 }
@@ -125,7 +137,7 @@ body {
   margin-bottom: 2vw;
   color: #ffff;
   font-weight: 400;
-  font-family: "Shippori Mincho B1", serif;
+  font-family: 'Noto Sans JP', serif;
   font-size: 1.5vw;
 }
 
@@ -138,7 +150,7 @@ body {
 }
 
 .process-content {
-  top: 73%;
+  top: 70%;
   right: 50%;
   text-align: center;
   justify-content: center;
@@ -148,7 +160,7 @@ body {
 .process-content h3 {
   margin-bottom: 2vw;
   font-weight: 400;
-  font-family: "Shippori Mincho B1", serif;
+  font-family: 'Noto Sans JP', serif;
   font-size: 1.5vw;
 }
 
@@ -160,7 +172,7 @@ body {
 }
 
 .about-fees {
-  top: 73%;
+  top: 70%;
   left: 50%;
   text-align: center;
   justify-content: center;
@@ -170,7 +182,7 @@ body {
 .about-fees h3 {
   margin-bottom: 2vw;
   font-weight: 400;
-  font-family: "Shippori Mincho B1", serif;
+  font-family: 'Noto Sans JP', serif;
   font-size: 1.5vw;
 }
 
@@ -182,9 +194,6 @@ body {
 }
 
 .button-design button {
-  background: none;
-  justify-content: center;
-  align-items: center;
   min-width: 220px;
   min-height: 56px;
   font-size: 1.2em;
@@ -195,7 +204,6 @@ body {
   border: 2px solid rgb(197, 97, 137);
   color: #a43549;
   background: #fff;
-  font-weight: 500;
   overflow: hidden;
 }
 
@@ -292,5 +300,300 @@ button i {
 }
 
 .button-design2 button:hover {
-  color: #ebb667; 
+  color: #ebb667;
+}
+
+.top-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-page img {
+  width: 80%;
+}
+
+.top-page .logo {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
+
+.font-region {
+  background-color: #ececec;
+  padding: 5px 0;
+}
+
+.font-region .fontSize dl {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  justify-content: end;
+}
+
+.font-region .fontSize dl dt {
+  margin-right: 10px;
+}
+
+.font-region .fontSize button.active {
+  background: transparent;
+}
+
+.font-region .fontSize button {
+  background: #fff;
+  color: #333;
+  padding: 5px 5px;
+  border: 1px solid #b9b9b9;
+  border-left: 0;
+  font-weight: bold;
+  min-height: 35px;
+  min-width: 35px;
+  cursor: pointer;
+}
+
+.font-region .fontSize dd:first-of-type button {
+  border-left: 1px solid #b9b9b9;
+}
+
+.top-page .contact-info {
+  display: flex;
+  align-items: center;
+}
+
+.top-page .contact-info .phone {
+  display: flex;
+  flex-direction: column;
+  line-height: 4.5vh;
+  position: relative;
+  left: 4vw;
+}
+
+.top-page .contact-info .question-button img {
+  float: right;
+}
+
+.top-page .contact-info .phone .phone-number {
+  font-size: 3vw;
+  font-weight: bold;
+  color: #a43549;
+}
+
+.top-page .contact-info .phone .phone-description {
+  font-size: 1vw;
+  font-family: 'Noto Sans JP', serif;
+  font-weight: 400;
+}
+
+.navigation {
+  background-color: #C97373;
+}
+
+.navigation ul {
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation li {
+  border-right: 1px solid #bbb;
+  margin: 1.5vw 0;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+}
+
+.navigation li:last-child {
+  border-right: none;
+}
+
+.navigation li a {
+  display: block;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 0px 1.9vw;
+  text-decoration: none;
+  font-size: 1.4vw;
+  font-family: 'Noto Sans JP', serif;
+  font-weight: 400;
+}
+
+.footer-block {
+  position: relative;
+}
+
+.footer-block .footer-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+}
+
+.footer-block .footer-wrap .btn-download {
+  font-size: 1.4vw;
+  cursor: pointer;
+  border: none;
+  background: #fff;
+  font-weight: 500;
+  margin-top: 12vh;
+}
+
+.footer-block .footer-wrap .btn-download a {
+  text-decoration: none;
+  padding: 10px 80px;
+  display: flex;
+  color: #a43549;
+  align-items: center;
+}
+
+.footer-block .footer-wrap .content {
+  margin-top: 20vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-block .footer-wrap .content .content-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 2.5vw;
+  font-size: 1.5vw;
+  font-family: 'Noto Sans JP', serif;
+  font-weight: 400;
+}
+
+.footer-block .footer-wrap .content .content-left .access {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-block .footer-wrap .content .content-left .btn-access {
+  font-size: 1.5vw;
+  cursor: pointer;
+  border: none;
+  background: #fff;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.footer-block .footer-wrap .content .content-left .btn-access a {
+  text-decoration: none;
+  display: flex;
+  color: #a43549;
+  align-items: center;
+}
+
+.footer-block .footer-wrap .content .content-left img {
+  margin-bottom: 2vw;
+}
+
+.footer-block .footer-wrap .content .content-left p {
+  color: #FFFFFF;
+}
+
+.footer-block .footer-wrap .content .content-right {
+  display: flex;
+  justify-content: space-between;
+  line-height: 4vh;
+  margin-top: 14vw;
+}
+
+.footer-block .footer-wrap .content .content-right p {
+  color: #FFFFFF;
+}
+
+.footer-block .footer-wrap .content .content-right .detail-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 2.5vw;
+  font-size: 1.5vw;
+  font-family: 'Noto Sans JP', serif;
+  font-weight: 400;
+  margin-right: 4vw
+}
+
+.footer-block .footer-wrap .content .content-right .detail-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 2.5vw;
+  font-size: 1.5vw;
+  font-family: 'Noto Sans JP', serif;
+  font-weight: 400;
+}
+
+.ly_footer {
+  font-weight: 100;
+  font-size: 1.5vw;
+  font-family: 'Noto Sans JP', serif;
+  color: #FFFFFF;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+}
+
+/* CSS FOR SP */
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+
+  /* 縦向きスマートフォン用のCSS */
+  header {
+    display: none;
+  }
+
+  .jinso-service-block {
+    display: none;
+  }
+
+  .footer-block {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1115px) {
+  .width-page {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .top-page .contact-info .phone .phone-number {
+    font-size: 2.5vw;
+  }
+
+  .top-page .contact-info .phone {
+    width: 22vw;
+    left: 7vw;
+  }
+
+  .navigation li a {
+    padding: 0px 2.6vw;
+    font-size: 1.3vw;
+  }
+
+  .footer-block .footer-wrap .content {
+    margin-top: 10vh;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .footer-block .footer-wrap .content .content-left img {
+    width: 35%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .footer-block .footer-wrap .btn-download {
+    margin-top: 8vh;
+  } 
+}
+
+@media only screen and (max-width: 800px) {
+  .navigation li a {
+    padding: 0px 20px;
+  }
 }
