@@ -363,7 +363,7 @@ button i {
 .top-page .contact-info .phone {
   display: flex;
   flex-direction: column;
-  line-height: 4.5vh;
+  line-height: 2vw;
   position: relative;
   left: 4vw;
 }
@@ -374,8 +374,9 @@ button i {
 
 .top-page .contact-info .phone .phone-number {
   font-size: 3vw;
-  font-weight: bold;
-  color: #a43549;
+  font-weight: 400;
+  color: #c97373;
+  font-family: 'Code39', sans-serif;
 }
 
 .top-page .contact-info .phone .phone-description {
@@ -438,19 +439,19 @@ button i {
   border: none;
   background: #fff;
   font-weight: 500;
-  margin-top: 12vh;
+  margin-top: 5vw;
 }
 
 .footer-block .footer-wrap .btn-download a {
   text-decoration: none;
   padding: 10px 80px;
   display: flex;
-  color: #a43549;
+  color: #AF7171;
   align-items: center;
 }
 
 .footer-block .footer-wrap .content {
-  margin-top: 20vh;
+  margin-top: 7vw;
   display: flex;
   justify-content: space-between;
 }
@@ -538,22 +539,19 @@ button i {
   right: 0;
 }
 
-/* CSS FOR SP */
-@media only screen and (min-device-width: 320px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
-
-  /* 縦向きスマートフォン用のCSS */
-  header {
-    display: none;
-  }
-
-  .jinso-service-block {
-    display: none;
-  }
-
-  .footer-block {
-    display: none;
-  }
+/* CSS FOR DEVICES*/
+.header-sp {
+  display: none;
 }
+
+.jinso-service-block-sp {
+  display: none;
+}
+
+.footer-block-sp {
+  display: none;
+}
+
 
 @media only screen and (max-width: 1115px) {
   .width-page {
@@ -574,10 +572,6 @@ button i {
     padding: 0px 2.6vw;
     font-size: 1.3vw;
   }
-
-  .footer-block .footer-wrap .content {
-    margin-top: 10vh;
-  }
 }
 
 @media only screen and (max-width: 1080px) {
@@ -586,14 +580,191 @@ button i {
   }
 }
 
-@media only screen and (max-width: 900px) {
-  .footer-block .footer-wrap .btn-download {
-    margin-top: 8vh;
-  } 
-}
-
 @media only screen and (max-width: 800px) {
   .navigation li a {
     padding: 0px 20px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  /* iPad用のCSS */
+}
+
+/* CSS FOR SP */
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+
+  /* 縦向きスマートフォン用のCSS */
+  .header {
+    display: none;
+  }
+
+  .jinso-service-block {
+    display: none;
+  }
+
+  .footer-block {
+    display: none;
+  }
+
+  .header-sp {
+    display: block;
+  }
+
+  .jinso-service-block-sp {
+    display: block;
+  }
+
+  .footer-block-sp {
+    display: block;
+    position: relative;
+    background-image: url("../img/sp/sp_footer_bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 175vw;
+  }
+
+  .top-page-sp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+  }
+
+  .top-page-sp .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .top-page-sp .logo .main-logo,
+  .top-page-sp .logo .main-logo2 {
+    width: 25vw;
+  }
+
+  .top-page-sp .contact-info {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+  }
+
+  .top-page-sp .contact-info .phone {
+    display: flex;
+    flex-direction: column;
+    line-height: 3vw;
+  }
+
+  .top-page-sp .contact-info .phone .phone-number {
+    font-size: 4vw;
+    font-weight: 900;
+    color: #c97373;
+    font-family: 'Noto Sans JP', serif;
+  }
+
+  .top-page-sp .contact-info .phone .phone-description {
+    font-size: 1.5vw;
+    font-family: 'Noto Sans JP', serif;
+    font-weight: 400;
+    color: #232323;
+  }
+
+  .footer-block-sp .footer-wrap-sp {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: -webkit-center;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .footer-block-sp .footer-wrap-sp .btn-download {
+    font-size: 2vw;
+    border: none;
+    background: #fff;
+    font-weight: 500;
+    margin-top: 14vw;
+  }
+
+  .footer-block-sp .footer-wrap-sp .btn-download a {
+    text-decoration: none;
+    padding: 10px 80px;
+    display: flex;
+    color: #AF7171;
+    align-items: center;
+  }
+
+  .footer-block-sp .content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 26vw;
+    margin-bottom: 3vw;
+  }
+
+  .footer-block-sp .content-up {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-block-sp .border-bottom {
+    border-bottom: 1px solid white;
+    margin: 2vw 0;
+  }
+
+  .footer-block-sp .content-up .detail-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 8vw;
+    font-size: 4vw;
+    font-family: 'Noto Sans JP', serif;
+    font-weight: 400;
+    color: #fff;
+  }
+
+  .footer-block-sp .content-up .detail-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 8vw;
+    font-size: 4vw;
+    font-family: 'Noto Sans JP', serif;
+    font-weight: 400;
+    color: #fff;
+  }
+
+  .footer-block-sp .content-down {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 8vw;
+    font-size: 4vw;
+    font-family: 'Noto Sans JP', serif;
+    font-weight: 400;
+    color: #fff;
+  }
+
+  .ly_footer_sp {
+    font-weight: 100;
+    font-size: 4.5vw;
+    font-family: 'Noto Sans JP', serif;
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    right: 0;
+  }
+}
+
+@media only screen and (max-width: 525px) {
+  .footer-block-sp {
+    height: 180vw;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .footer-block-sp {
+    height: 190vw;
   }
 }
